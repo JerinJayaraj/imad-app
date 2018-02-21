@@ -14,7 +14,8 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/art1', function (req, res) {
-    res.send(createtenplate(Article-1));
+    res.sendFile(path.join(__dirname, 'ui', 'art1.html'));
+});
     
 });
 app.get('/art2', function (req, res) {
