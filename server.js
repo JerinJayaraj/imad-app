@@ -25,10 +25,11 @@ function createtemplate(data)
     var date=data.date;l
     var content=data.content;
     
-    var htmlTemp = '<html>
+    var htmlTemp = '
+    <html>
         <head>
             <title>
-                ${title};
+                ${title}
             </title>
             <meta name="viewport" content=width=device-width,initial-scale=1"/>
              <link href="/ui/style.css" rel="stylesheet" />
@@ -40,13 +41,13 @@ function createtemplate(data)
                     </div>
                     <hr>
                     <h3>
-                        ${heading};
+                        ${heading}
                     </h3>
                     <div>
-                        ${date};
+                        ${date}
                     </div>
                     <div>
-                       ${content};
+                       ${content}
                     </div>
                 </div>
             </body>
